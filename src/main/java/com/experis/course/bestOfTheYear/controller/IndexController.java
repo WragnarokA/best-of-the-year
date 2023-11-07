@@ -13,7 +13,16 @@ public class IndexController {
     public String index() {
         return "<html><body><h1>Best of the year by Wilmer<h1><bogy><html>";
     }
-    
+
+    @GetMapping("home")
+    public String home() {
+        return "home";
+    }
+
+    @GetMapping("home/contacts")
+    public String contactts() {
+        return "contacts";
+    }
 
 }
 
