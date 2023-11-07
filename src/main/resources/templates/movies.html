@@ -5,14 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Movies</title>
 </head>
-<body>
-<h1>🎉🎉🎉Best of the year by <samp th:text="${author}"></samp>🎉🎉🎉</h1>
-<div>
-    <p><a th:href="@{/movies}">Vai a Movies</a></p>
-    <p><a th:href="@{/songs}">Vedi a Song</a></p>
-</div>
 
+<body>
+<h1>Best Movies</h1>
+<p th:text="${movieList}"></p>
+
+<!-- Link alla pagina delle canzoni -->
+<a th:href="@{/songs}">Vedi le migliori canzoni</a>
+<p><a th:href="@{/home}">Torna a Home</a></p>
 </body>
+
 </html>
